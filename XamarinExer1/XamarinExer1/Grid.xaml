@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.Grid"
+             Title="StackLayout - Grid"
+             BackgroundColor="Aqua">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Button Text="CLICK ME!" 
+                Margin="20,10" 
+                BackgroundColor="Yellow" 
+                x:Name="ClickmeBtn" 
+                Clicked="ClickmeBtn_Clicked"/>
+
+        <Grid Grid.Row="1">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Ellipse Fill="PaleVioletRed" 
+                     Grid.Row="0" 
+                     Grid.RowSpan="3"  
+                     WidthRequest="150" 
+                     HeightRequest="150" 
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Start" 
+                     Margin="20,0,20,0"/>
+            
+            <Ellipse Fill="Pink" 
+                     Grid.Row="0" 
+                     Grid.RowSpan="3" 
+                     WidthRequest="100" 
+                     HeightRequest="100" 
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Start" 
+                     Margin="20,25,20,0"/>
+            
+            <Ellipse Fill="Red" 
+                     Grid.Row="0" 
+                     Grid.RowSpan="3"
+                     WidthRequest="50" 
+                     HeightRequest="50" 
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Start" 
+                     Margin="20,50,20,0"/>
+        </Grid>
+
+        <Grid Grid.Row="2" x:Name="grid1" HeightRequest="20">
+            
+            <Label Text="I am a Xamarin Developer" 
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="Center"/>
+
+        </Grid>
+
+        <Grid Grid.Row="2" x:Name="grid2" Margin="20,0">
+            
+            <Label Text="Xamarin.Forms is an open source cross-platform framework from  Microsoft for building iOS, Android, and Windows apps Windows apps with .NET from a single shared codebase."
+                   VerticalOptions="StartAndExpand"
+                   HorizontalTextAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="20,0,20,10" RowSpacing="0" ColumnSpacing="0" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.Row="0" 
+                     Grid.RowSpan="2" 
+                     BackgroundColor="Blue"/>
+            
+            <BoxView Grid.Row="0" 
+                     Grid.RowSpan="2" 
+                     Grid.Column="1" 
+                     BackgroundColor="red"/>
+            
+            <BoxView Grid.Row="2" 
+                     Grid.RowSpan="2" 
+                     BackgroundColor="Yellow"/>
+            
+            <BoxView Grid.Row="2" 
+                     Grid.RowSpan="2" 
+                     Grid.Column="1" 
+                     BackgroundColor="White"/>
+
+        </Grid>
+  
+    </Grid>
+    
+</ContentPage>

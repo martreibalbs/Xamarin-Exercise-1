@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.LayoutOptions"
+             Title="StackLayout - LayoutOptions">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="Red">
+            
+            <Label Text="Label1" 
+                   BackgroundColor="Blue"/>
+            
+            <Label Text="Label2" 
+                   BackgroundColor="Aqua"/>
+            
+            <Label Text="Label3" 
+                   BackgroundColor="Green"/>
+
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="Red">
+            
+            <Label Text="Label1" 
+                   BackgroundColor="Blue" />
+            
+            <Label Text="Label2" 
+                   BackgroundColor="Aqua"/>
+            
+            <Label Text="Label3" 
+                   BackgroundColor="Green" 
+                   HorizontalOptions="EndAndExpand"/>
+            
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="Red">
+            
+            <Label Text="Label1" 
+                   BackgroundColor="Blue" 
+                   HorizontalOptions="Start"/>
+            
+            <Label Text="Label2" 
+                   BackgroundColor="Aqua" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Label Text="Label3" 
+                   BackgroundColor="Green" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="Red">
+            
+            <Label Text="Label1" 
+                   BackgroundColor="Blue" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Label Text="Label2" 
+                   BackgroundColor="Aqua" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Label Text="Label3" 
+                   BackgroundColor="Green" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="Red">
+            
+            <Label Text="Label1" 
+                   BackgroundColor="Blue" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Label Text="Label2" 
+                   BackgroundColor="Aqua" 
+                   HorizontalOptions="FillAndExpand" 
+                   HorizontalTextAlignment="Center"/>
+            
+            <Label Text="Label3" 
+                   BackgroundColor="Green" 
+                   HorizontalOptions="FillAndExpand"/>
+            
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
