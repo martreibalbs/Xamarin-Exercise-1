@@ -20,7 +20,7 @@
                  Color="red"  
                  CornerRadius="20" 
                  WidthRequest="40" 
-                 HeightRequest="39" 
+                 HeightRequest="40" 
                  Margin="4,4,4,4"/>
 
         <StackLayout Orientation="Vertical" 

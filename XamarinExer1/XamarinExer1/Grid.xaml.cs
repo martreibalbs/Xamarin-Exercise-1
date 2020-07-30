@@ -12,27 +12,28 @@ namespace XamarinExer1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Grid : ContentPage
     {
+        bool isText;
+        
         public Grid()
         {
             InitializeComponent();
-            grid2.IsVisible = false;
         }
 
         private void ClickmeBtn_Clicked(object sender, EventArgs e)
         {
-            if (grid1.IsVisible == true)
+
+
+            if (isText)
             {
-                grid1.IsVisible = false;
-                grid2.IsVisible = true;
+                isText = false;
+                clickme.Text = "I am a Xamarin Developer";
             }
             else
             {
-                grid1.IsVisible = true;
-                grid2.IsVisible = false;
+                isText = true;
+                clickme.Text = "Xamarin.Forms is an open source cross-platform framework from Microsoft for building iOS, Android, & Windows apps with .NET from a single shared codebase.";
             }
-           
-                
-            
+
         }
 
      

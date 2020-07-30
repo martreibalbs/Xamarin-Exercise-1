@@ -82,11 +82,13 @@
                    BackgroundColor="Aqua" 
                    HorizontalOptions="FillAndExpand" 
                    HorizontalTextAlignment="Center"/>
-            
+
             <Label Text="Label3" 
                    BackgroundColor="Green" 
-                   HorizontalOptions="FillAndExpand"/>
-            
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="End"/>
+                   
+
         </StackLayout>
         
     </StackLayout>

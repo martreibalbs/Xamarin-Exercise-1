@@ -40,5 +40,15 @@ namespace XamarinExer1
             Navigation.PushAsync(new Grid());
 
         }
+
+        private void FirstPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new FirstPage());
+        }
+
+        private void SecondPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SecondPage());
+        }
     }
 }

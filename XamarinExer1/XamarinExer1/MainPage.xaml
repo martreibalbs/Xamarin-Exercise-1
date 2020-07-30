@@ -12,7 +12,8 @@
         <Button Text="STACKLAYOUT - LAYOUTOPTIONS" x:Name="LayoutOptions" Clicked="LayoutOptions_Clicked"/>
         <Button Text="STACKLAYOUT - SAMPLE" x:Name="Sample" Clicked="Sample_Clicked"/>
         <Button Text="STACKLAYOUT - GRID" x:Name="Grid" Clicked="Grid_Clicked"/>
-
+        <Button Text="FIRST PAGE" x:Name="FirstPage" Clicked="FirstPage_Clicked"/>
+        <Button Text="SECOND PAGE" x:Name="SecondPage" Clicked="SecondPage_Clicked"/>
     </StackLayout>
 
 </ContentPage>

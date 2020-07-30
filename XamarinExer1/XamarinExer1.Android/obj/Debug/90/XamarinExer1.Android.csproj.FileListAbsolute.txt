@@ -492,3 +492,7 @@ C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\De
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\CustomButton.java
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\CustomButtonRenderer.java
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\yone.jpg
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\CustomEntryRenderer.java
