@@ -496,3 +496,4 @@ C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\De
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\CustomButtonRenderer.java
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\yone.jpg
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\CustomEntryRenderer.java
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\card.png

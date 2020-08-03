@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.SecondPage"
+             Title="Second Page">
+    <ContentPage.Content>
+
+        <Grid RowSpacing="0" BackgroundColor="DarkCyan">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"
+                   Text="I am a Xamarin Developer"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Padding="50,0"
+                   TextColor="White"
+                   FontSize="20">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnTapGestureRecognizerTapped"
+                        NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Image Source="yone.jpg"
+               Grid.Row="1">
+                <Image.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped" />
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row="2"
+               x:Name="Swiped"
+               HorizontalOptions="Center"
+               FontSize="20"/>
+
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

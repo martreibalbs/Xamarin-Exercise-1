@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Behavior="clr-namespace:XamarinExer1.Behaviors" 
+             xmlns:Effects="clr-namespace:XamarinExer1.Effects" 
+             xmlns:local="clr-namespace:XamarinExer1"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.Views.ThirdPage"
+             BackgroundColor="Olive">
+    
+    <ContentPage.Content>
+        
+        <StackLayout Spacing="0" Margin="30" 
+                     VerticalOptions="Center">
+            
+            <StackLayout Orientation="Horizontal">
+                <local:CustomEntry 
+                   Text="Card" 
+                   HorizontalOptions="Start"
+                   IsReadOnly="True"/>
+
+                <Entry Placeholder="XXXX XXXX XXXX XXXX"
+                   Keyboard="Telephone"
+                   TextColor="Black"
+                   HeightRequest="47" 
+                   VerticalOptions="Center">
+
+                    <Entry.Effects>
+                        <Effects:EntryEffectChange/>
+                    </Entry.Effects>
+
+                    <Entry.Behaviors>
+                        <Behavior:EntryBehavior 
+                        MaxLength="19"/>
+                    </Entry.Behaviors>
+
+                </Entry>
+            </StackLayout>
+
+            <Button Text="Open Website"
+                x:Name="OpenWeb"
+                Clicked="OpenWeb_Clicked"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

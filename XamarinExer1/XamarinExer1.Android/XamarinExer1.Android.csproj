@@ -60,6 +60,8 @@
   <ItemGroup>
     <Compile Include="CustomButtonRenderer.cs" />
     <Compile Include="CustomEntryRenderer.cs" />
+    <Compile Include="DependencyService\BrowserImplementation.cs" />
+    <Compile Include="Effects\EntryEffects.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +97,9 @@
       <Project>{CF1DF41D-BE91-47BD-977C-F5989375DE53}</Project>
       <Name>XamarinExer1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\card.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
