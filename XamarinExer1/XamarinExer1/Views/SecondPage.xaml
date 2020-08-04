@@ -5,49 +5,49 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XamarinExer1.SecondPage"
-             Title="Second Page">
-    <ContentPage.Content>
+             Title="Second Page"
+             x:Name="parentLayout">
 
-        <Grid RowSpacing="0" BackgroundColor="DarkCyan">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="60"/>
-            </Grid.RowDefinitions>
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
 
-            <Label Grid.Row="0"
-                   Text="I am a Xamarin Developer"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   Padding="50,0"
-                   TextColor="White"
-                   FontSize="20">
+        <Label Grid.Row="0"
+               Text="{Binding Source={x:Reference parentLayout}, Path=DisplayText}"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Padding="50,0">
 
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
                         Tapped="OnTapGestureRecognizerTapped"
                         NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
+            </Label.GestureRecognizers>
+        </Label>
 
-            <Image Source="yone.jpg"
+        <Image Source="yone.jpg"
                Grid.Row="1">
-                <Image.GestureRecognizers>
-                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped" />
-                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
-                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
-                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
-                </Image.GestureRecognizers>
-            </Image>
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+            </Image.GestureRecognizers>
+        </Image>
 
-            <Label Grid.Row="2"
-               x:Name="Swiped"
+        <Label Grid.Row="2"
+               Text="{Binding Source={x:Reference parentLayout}, Path=Text}"
+               TextColor="{Binding Source={x:Reference parentLayout}, Path=Colors}"
+               IsVisible="{Binding Source={x:Reference parentLayout}, Path=TextChange}"
+               InputTransparent="True"  
                HorizontalOptions="Center"
                FontSize="20"/>
 
 
-        </Grid>
+    </Grid>
 
 
-    </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,8 @@
              xmlns:local="clr-namespace:XamarinExer1"
              mc:Ignorable="d"
              x:Class="XamarinExer1.Views.ThirdPage"
-             BackgroundColor="Olive">
+             BackgroundColor="Olive"
+             Title="Third Page">
     
     <ContentPage.Content>
         
