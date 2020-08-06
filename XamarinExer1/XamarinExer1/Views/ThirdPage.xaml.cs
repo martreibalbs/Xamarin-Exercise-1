@@ -14,11 +14,10 @@ namespace XamarinExer1.Views
             InitializeComponent();
         }
 
-        private async void OpenWeb_Clicked(object sender, EventArgs e)
+        private void OpenWeb_Clicked(object sender, EventArgs e)
         {
             var service = Xamarin.Forms.DependencyService.Get<IBrowserDependency>();
-
-            await Browser.OpenAsync(service.webSite(), BrowserLaunchMode.SystemPreferred);
+            service.OpenUrl("https://facebook.com");
         }
     }
 }

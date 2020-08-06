@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="CustomButtonRenderer.cs" />
     <Compile Include="CustomEntryRenderer.cs" />
-    <Compile Include="DependencyService\BrowserImplementation.cs" />
+    <Compile Include="DependencyService\BrowserImplement.cs" />
     <Compile Include="Effects\EntryEffects.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -101,5 +101,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\card.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
