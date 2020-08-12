@@ -15,6 +15,7 @@
         <Button Text="FIRST PAGE" x:Name="FirstPage" Clicked="FirstPage_Clicked"/>
         <Button Text="SECOND PAGE" x:Name="SecondPage" Clicked="SecondPage_Clicked"/>
         <Button Text="THIRD PAGE" x:Name="ThirdPage" Clicked="ThirdPage_Clicked"/>
+        <Button Text="OBSERVABLE COLLECTION" x:Name="ObserveCollect" Clicked="ObserveCollect_Clicked"/>
     </StackLayout>
 
 </ContentPage>

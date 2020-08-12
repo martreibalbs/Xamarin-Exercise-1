@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.Views.ObservableCollectionView"
+             Title="Observable Collection Grid">
+    <ContentPage.Content>
+
+        <ScrollView Padding="20,5"
+                    BackgroundColor="#2b3a44">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <StackLayout Grid.Column="0"  
+                             BindableLayout.ItemsSource="{Binding LettersList}" 
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             WidthRequest="150">
+
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid BackgroundColor="#27638a"
+                                  Margin="10,27">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="110"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding LeftLettersImage}" 
+                                       Margin="10,10,10,0"   
+                                       VerticalOptions="StartAndExpand"                 
+                                       BackgroundColor="Black"/>
+                                
+                                <Label Text="{Binding LeftLetters}" 
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="EndAndExpand"
+                                       HorizontalOptions="Center"
+                                       BackgroundColor="#27638a"/>
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" 
+                             BindableLayout.ItemsSource="{Binding LettersList}"
+                             VerticalOptions="Center"     
+                             HorizontalOptions="Center" 
+                             WidthRequest="150">
+
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid BackgroundColor="#27638a"
+                                  Margin="10,27">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="110"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding RightLettersImage}"                 
+                                       Margin="10,10,10,0"            
+                                       VerticalOptions="StartAndExpand"  
+                                       BackgroundColor="Black"/>
+                                
+                                <Label Text="{Binding RightLetters}"             
+                                       FontSize="20"     
+                                       FontAttributes="Bold"
+                                       VerticalOptions="EndAndExpand"          
+                                       HorizontalOptions="Center"          
+                                       BackgroundColor="#27638a"/>
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+    
+</ContentPage>
