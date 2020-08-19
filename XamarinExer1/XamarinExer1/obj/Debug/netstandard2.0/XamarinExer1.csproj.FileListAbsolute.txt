@@ -20,3 +20,4 @@ C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1\obj\Debug\nets
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1\obj\Debug\netstandard2.0\XamarinExer1.dll
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1\obj\Debug\netstandard2.0\ref\XamarinExer1.dll
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1\obj\Debug\netstandard2.0\XamarinExer1.pdb
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1\obj\Debug\netstandard2.0\Views\UIDesign.xaml.g.cs

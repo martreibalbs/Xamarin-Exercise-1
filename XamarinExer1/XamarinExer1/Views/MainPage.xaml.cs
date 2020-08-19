@@ -61,5 +61,10 @@ namespace XamarinExer1
         {
             Navigation.PushAsync(new ObservableCollectionView());
         }
+
+        private void uiDesign_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new UIDesign());
+        }
     }
 }

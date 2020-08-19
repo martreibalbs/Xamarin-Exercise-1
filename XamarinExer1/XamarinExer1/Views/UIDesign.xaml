@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinExer1.Views.UIDesign"
+             BackgroundImageSource="BG"
+             Title="UI Design">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid ColumnSpacing="0"
+              RowSpacing="0"
+              Padding="40,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+
+                <Label Grid.Row="0"
+                   FontSize="35"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   TextColor="#ffffff"
+                   FontFamily="LibreBaskerville-Bold.ttf#"
+                   LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <Span Text="Choose 
+                              your "/>
+                            <Span Text="location."
+                              TextColor="#d29f06"/>
+
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Grid.Row="1" 
+                   Text="Your city"
+                   FontSize="13"                       
+                   TextColor="#ffffff"
+                FontFamily="Roboto-Light.ttf#"/>
+
+                <Entry Grid.Row="2"
+                   Text="Warsaw"
+                   Keyboard="Text"
+                   FontSize="13"
+                   BackgroundColor="#1c2127"
+                   Opacity="0.7"
+                   Margin="0,5.417,0,20.417"
+                FontFamily="Roboto-Light.ttf#"/>
+
+                <Label Grid.Row="3"
+                   Text="Your address"  
+                   FontSize="13"
+                   TextColor="#ffffff"
+                FontFamily="Roboto-Light.ttf#"/>
+
+                <Entry Grid.Row="4"
+                   Text="Lektykarska 20"
+                   Keyboard="Text"
+                   FontSize="13"
+                   BackgroundColor="#1c2127"
+                   Opacity=".7"
+                   Margin="0,5.417,0,42.417"
+                FontFamily="Roboto-Light.ttf#"/>
+
+                <Frame Grid.Row="5" 
+                   BorderColor="#ffffff"
+                   BackgroundColor="Transparent"
+                   Padding="0">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" 
+                                              NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal"                    
+                                 HorizontalOptions="Center"                         
+                                 VerticalOptions="Center" 
+                                 Spacing="10">
+
+                        <Image Source="location"                 
+                               WidthRequest="13"/>
+
+                        <Label Text="CURRENT LOCATION"
+                               TextColor="#ffffff"           
+                               FontSize="13"
+                               FontFamily="Roboto-Light.ttf#"/>
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+
+            <Button Text="show restaurants"      
+                BorderWidth="0"              
+                TextColor="#ffffff"              
+                VerticalOptions="EndAndExpand"    
+                BackgroundColor="#d29f06"    
+                HeightRequest="60"
+                FontFamily="Roboto-Light.ttf#"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

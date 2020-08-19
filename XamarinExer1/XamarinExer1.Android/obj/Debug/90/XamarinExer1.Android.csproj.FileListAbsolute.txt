@@ -507,3 +507,7 @@ C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\De
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\h.jpg
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\i.jpg
 C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\j.jpg
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\bg.png
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\res\drawable\location.png
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\UIDesignEntryRenderer.java
+C:\Users\Mart\source\repos\XamarinExer1\XamarinExer1\XamarinExer1.Android\obj\Debug\90\android\src\crc64cc539ac567fb1caa\UIDesignLabelRenderer.java

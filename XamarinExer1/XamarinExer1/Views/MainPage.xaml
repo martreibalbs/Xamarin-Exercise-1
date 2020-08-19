@@ -6,16 +6,19 @@
              mc:Ignorable="d"
              x:Class="XamarinExer1.MainPage">
 
-    <StackLayout>
-        <Label Text="Welcome To Xamarin Forms" HorizontalOptions="Center"/>
-        <Button Text="STACKLAYOUT - BASIC" x:Name="Basic" Clicked="Basic_Clicked"/>
-        <Button Text="STACKLAYOUT - LAYOUTOPTIONS" x:Name="LayoutOptions" Clicked="LayoutOptions_Clicked"/>
-        <Button Text="STACKLAYOUT - SAMPLE" x:Name="Sample" Clicked="Sample_Clicked"/>
-        <Button Text="STACKLAYOUT - GRID" x:Name="Grid" Clicked="Grid_Clicked"/>
-        <Button Text="FIRST PAGE" x:Name="FirstPage" Clicked="FirstPage_Clicked"/>
-        <Button Text="SECOND PAGE" x:Name="SecondPage" Clicked="SecondPage_Clicked"/>
-        <Button Text="THIRD PAGE" x:Name="ThirdPage" Clicked="ThirdPage_Clicked"/>
-        <Button Text="OBSERVABLE COLLECTION" x:Name="ObserveCollect" Clicked="ObserveCollect_Clicked"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Welcome To Xamarin Forms" HorizontalOptions="Center"/>
+            <Button Text="STACKLAYOUT - BASIC" x:Name="Basic" Clicked="Basic_Clicked"/>
+            <Button Text="STACKLAYOUT - LAYOUTOPTIONS" x:Name="LayoutOptions" Clicked="LayoutOptions_Clicked"/>
+            <Button Text="STACKLAYOUT - SAMPLE" x:Name="Sample" Clicked="Sample_Clicked"/>
+            <Button Text="STACKLAYOUT - GRID" x:Name="Grid" Clicked="Grid_Clicked"/>
+            <Button Text="FIRST PAGE" x:Name="FirstPage" Clicked="FirstPage_Clicked"/>
+            <Button Text="SECOND PAGE" x:Name="SecondPage" Clicked="SecondPage_Clicked"/>
+            <Button Text="THIRD PAGE" x:Name="ThirdPage" Clicked="ThirdPage_Clicked"/>
+            <Button Text="OBSERVABLE COLLECTION" x:Name="ObserveCollect" Clicked="ObserveCollect_Clicked"/>
+            <Button Text="UI DESIGN" x:Name="uiDesign" Clicked="uiDesign_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
